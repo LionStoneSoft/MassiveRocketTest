@@ -170,6 +170,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProductManagerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -235,6 +236,10 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\ProductManager\Index.cshtml" />
+    <Content Include="Views\ProductManager\Create.cshtml" />
+    <Content Include="Views\ProductManager\Edit.cshtml" />
+    <Content Include="Views\ProductManager\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -251,6 +256,24 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MassiveRocketTest.Core\MassiveRocketTest.Core.csproj">
+      <Project>{4f1596c4-fa3b-4253-b988-c63a3440cdc3}</Project>
+      <Name>MassiveRocketTest.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MassiveRocketTest.DataAccess.InMemory\MassiveRocketTest.DataAccess.InMemory.csproj">
+      <Project>{77d56499-3a87-4040-962f-3993bdf04626}</Project>
+      <Name>MassiveRocketTest.DataAccess.InMemory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MassiveRocketTest.DataAccess.SQL\MassiveRocketTest.DataAccess.SQL.csproj">
+      <Project>{1f81042c-b87b-406d-b90c-ef784b873208}</Project>
+      <Name>MassiveRocketTest.DataAccess.SQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MassiveRocketTest.Services\MassiveRocketTest.Services.csproj">
+      <Project>{d88cc99f-dfde-4998-97e7-f62238ba8d2c}</Project>
+      <Name>MassiveRocketTest.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
