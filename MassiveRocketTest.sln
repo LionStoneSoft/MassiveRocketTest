@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassiveRocketTest.Core", "MassiveRocketTest.Core\MassiveRocketTest.Core.csproj", "{4F1596C4-FA3B-4253-B988-C63A3440CDC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassiveRocketTest.Services", "MassiveRocketTest.Services\MassiveRocketTest.Services.csproj", "{D88CC99F-DFDE-4998-97E7-F62238BA8D2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassiveRocketTest.DataAccess.SQL", "MassiveRocketTest.DataAccess.SQL\MassiveRocketTest.DataAccess.SQL.csproj", "{1F81042C-B87B-406D-B90C-EF784B873208}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassiveRocketTest.DataAccess.InMemory", "MassiveRocketTest.DataAccess.InMemory\MassiveRocketTest.DataAccess.InMemory.csproj", "{77D56499-3A87-4040-962F-3993BDF04626}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassiveRocketTest.WebUI", "MassiveRocketTest.WebUI\MassiveRocketTest.WebUI.csproj", "{A25F1904-4C47-4B29-9040-D72BFE57D822}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassiveRocketTest.WebUI.Tests", "MassiveRocketTest.WebUI.Tests\MassiveRocketTest.WebUI.Tests.csproj", "{359A2ACB-5EEB-4D56-AC11-46FB29EECFFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F1596C4-FA3B-4253-B988-C63A3440CDC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F1596C4-FA3B-4253-B988-C63A3440CDC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F1596C4-FA3B-4253-B988-C63A3440CDC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F1596C4-FA3B-4253-B988-C63A3440CDC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D88CC99F-DFDE-4998-97E7-F62238BA8D2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D88CC99F-DFDE-4998-97E7-F62238BA8D2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D88CC99F-DFDE-4998-97E7-F62238BA8D2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D88CC99F-DFDE-4998-97E7-F62238BA8D2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F81042C-B87B-406D-B90C-EF784B873208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F81042C-B87B-406D-B90C-EF784B873208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F81042C-B87B-406D-B90C-EF784B873208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F81042C-B87B-406D-B90C-EF784B873208}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77D56499-3A87-4040-962F-3993BDF04626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77D56499-3A87-4040-962F-3993BDF04626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77D56499-3A87-4040-962F-3993BDF04626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77D56499-3A87-4040-962F-3993BDF04626}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A25F1904-4C47-4B29-9040-D72BFE57D822}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A25F1904-4C47-4B29-9040-D72BFE57D822}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A25F1904-4C47-4B29-9040-D72BFE57D822}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A25F1904-4C47-4B29-9040-D72BFE57D822}.Release|Any CPU.Build.0 = Release|Any CPU
+		{359A2ACB-5EEB-4D56-AC11-46FB29EECFFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{359A2ACB-5EEB-4D56-AC11-46FB29EECFFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{359A2ACB-5EEB-4D56-AC11-46FB29EECFFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{359A2ACB-5EEB-4D56-AC11-46FB29EECFFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2DE6D5F1-FBC3-410C-8DE7-80A7FD068448}
+	EndGlobalSection
+EndGlobal
