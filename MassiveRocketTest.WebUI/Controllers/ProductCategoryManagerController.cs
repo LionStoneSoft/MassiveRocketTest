@@ -1,4 +1,5 @@
-﻿using MassiveRocketTest.Core.Models;
+﻿using MassiveRocketTest.Core.Contracts;
+using MassiveRocketTest.Core.Models;
 using MassiveRocketTest.DataAccess.InMemory;
 using System;
 using System.Collections.Generic;
@@ -10,10 +11,10 @@ namespace MassiveRocketTest.WebUI.Controllers
 {
     public class ProductCategoryManagerController : Controller
     {
-        InMemoryRepository<ProductCategory> context;
-        public ProductCategoryManagerController()
+        IRepository<ProductCategory> context;
+        public ProductCategoryManagerController(IRepository<ProductCategory> contextCategory)
         {
-            context = new InMemoryRepository<ProductCategory>();
+            this.context = contextCategory;
         }
         // GET: ProductManager
         public ActionResult Index()

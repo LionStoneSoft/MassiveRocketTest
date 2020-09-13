@@ -1,4 +1,5 @@
-﻿using MassiveRocketTest.Core.Models;
+﻿using MassiveRocketTest.Core.Contracts;
+using MassiveRocketTest.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace MassiveRocketTest.DataAccess.InMemory
 {
-    public class InMemoryRepository<P> where P : BaseEntity
+    public class InMemoryRepository<P> : IRepository<P> where P : BaseEntity
     {
         ObjectCache cache = MemoryCache.Default;
         List<P> items;
@@ -19,7 +20,8 @@ namespace MassiveRocketTest.DataAccess.InMemory
         {
             className = typeof(P).Name;
             items = cache[className] as List<P>;
-            if (items == null) {
+            if (items == null)
+            {
                 items = new List<P>();
             }
         }
@@ -41,7 +43,8 @@ namespace MassiveRocketTest.DataAccess.InMemory
             if (pToUpdate != null)
             {
                 pToUpdate = p;
-            } else
+            }
+            else
             {
                 throw new Exception(className + " Not found");
             }
@@ -53,7 +56,8 @@ namespace MassiveRocketTest.DataAccess.InMemory
             if (p != null)
             {
                 return p;
-            } else
+            }
+            else
             {
                 throw new Exception(className + " Not found");
             }
@@ -72,7 +76,8 @@ namespace MassiveRocketTest.DataAccess.InMemory
             if (pToDelete != null)
             {
                 items.Remove(pToDelete);
-            } else
+            }
+            else
             {
                 throw new Exception(className + " Not found");
             }
