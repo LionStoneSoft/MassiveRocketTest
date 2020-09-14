@@ -48,6 +48,8 @@ namespace MassiveRocketTest.WebUI
             // container.RegisterType<IProductRepository, ProductRepository>();
             container.RegisterType<IRepository<Product>, SQLRepository<Product>>();
             container.RegisterType<IRepository<ProductCategory>, SQLRepository<ProductCategory>>();
+            container.RegisterType<IRepository<Customer>, SQLRepository<Customer>>();
+
 
         }
     }
