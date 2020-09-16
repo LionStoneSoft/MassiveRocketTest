@@ -11,6 +11,7 @@ using Microsoft.Owin.Security;
 using MassiveRocketTest.WebUI.Models;
 using MassiveRocketTest.Core.Models;
 using MassiveRocketTest.Core.Contracts;
+using Segment;
 
 namespace MassiveRocketTest.WebUI.Controllers
 {
@@ -165,6 +166,14 @@ namespace MassiveRocketTest.WebUI.Controllers
                         PostCode = model.PostCode,
                         UserId = user.Id
                     };
+
+                    Analytics.Client.Identify(customer.Id, new Segment.Model.Traits
+                    {
+                        { "firstName", customer.FirstName },
+                        { "lastName", customer.LastName },
+                        { "email", customer.Email }
+                    });
+                    Analytics.Client.Track(user.Id, "Signup");
 
                     customerRepository.Insert(customer);
                     customerRepository.Commit();

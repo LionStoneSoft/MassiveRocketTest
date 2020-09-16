@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Segment;
 
 namespace MassiveRocketTest.WebUI
 {
@@ -16,6 +17,7 @@ namespace MassiveRocketTest.WebUI
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            Segment.Analytics.Initialize("VmxN5NyQDofde5N6KSzAUAIYs4j4zhif");
         }
     }
 }
